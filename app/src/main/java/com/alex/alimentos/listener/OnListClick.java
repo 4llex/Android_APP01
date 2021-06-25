@@ -1,4 +1,4 @@
-package com.alex.alimentos;
+package com.alex.alimentos.listener;
 
 public interface OnListClick {
     void onClick(int id);

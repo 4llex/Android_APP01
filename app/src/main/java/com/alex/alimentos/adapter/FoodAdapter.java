@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.alex.alimentos.OnListClick;
+import com.alex.alimentos.listener.OnListClick;
 import com.alex.alimentos.R;
 import com.alex.alimentos.entity.FoodEntity;
 import com.alex.alimentos.viewholder.FoodViewHolder;

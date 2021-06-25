@@ -6,17 +6,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.LinearLayout;
 
-import com.alex.alimentos.OnListClick;
+import com.alex.alimentos.listener.OnListClick;
 import com.alex.alimentos.adapter.FoodAdapter;
 import com.alex.alimentos.business.FoodBusiness;
 import com.alex.alimentos.constants.FoodConstants;
 import com.alex.alimentos.entity.FoodEntity;
 import com.alex.alimentos.R;
-import com.alex.alimentos.repository.FoodRepository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {

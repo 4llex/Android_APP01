@@ -3,7 +3,7 @@ package com.alex.alimentos.viewholder;
 import android.view.View;
 import android.widget.TextView;
 
-import com.alex.alimentos.OnListClick;
+import com.alex.alimentos.listener.OnListClick;
 import com.alex.alimentos.R;
 import com.alex.alimentos.entity.FoodEntity;
 

@@ -1,26 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:orientation="horizontal"
     tools:context=".ui.DetailsActivity">
 
     <TextView
         android:id="@+id/text_name"
-        android:layout_width="0dp"
+        style="@style/HighLightedInformation"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="3"
+        android:layout_centerHorizontal="true"
         android:padding="16dp"
         android:text="Alimento" />
 
+    <View
+        android:id="@+id/view_name"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text_name"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/text_portion"
+        style="@style/HighLightedInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_name"
+        android:padding="16dp"
+        android:text="@string/tamanho_da_porcao" />
+
+
+    <TextView
+        android:id="@+id/text_unit"
+        style="@style/DefaultInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/view_name"
+        android:padding="16dp"
+        android:text="Un" />
+
+    <TextView
+        android:id="@+id/text_quantity"
+        style="@style/DefaultInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_name"
+        android:layout_toStartOf="@+id/text_unit"
+        android:padding="16dp"
+        android:text="Qnt" />
+
+    <View
+        android:id="@+id/view_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text_quantity"
+        android:background="@color/grey" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        style="@style/HighLightedInformation"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_quantity"
+        android:padding="16dp"
+        android:text="@string/calorias" />
+
     <TextView
         android:id="@+id/text_calories"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
+        style="@style/DefaultInformation"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/view_quantity"
         android:padding="16dp"
-        android:text="Caloria" />
+        android:text="90" />
 
-</LinearLayout>
+    <View
+        android:id="@+id/view_calories"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text_calories"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/text_information"
+        style="@style/HighLightedInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_calories"
+        android:padding="16dp"
+        android:text="@string/informacoes" />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_information"
+        android:paddingStart="16dp"
+        style="@style/DefaultInformation"
+        android:text="@string/nenhuma_informacao_extra_para_ser_mostrada" />
+
+</RelativeLayout>

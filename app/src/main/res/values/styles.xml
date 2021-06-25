@@ -7,4 +7,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="HighLightedInformation" >
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DefaultInformation" >
+        <item name="fontFamily">@font/alegreya</item>
+    </style>
 </resources>

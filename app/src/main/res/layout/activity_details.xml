@@ -39,7 +39,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/view_name"
-        android:padding="16dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="0dp"
         android:text="Un" />
 
     <TextView
@@ -49,7 +52,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/view_name"
         android:layout_toStartOf="@+id/text_unit"
-        android:padding="16dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
         android:text="Qnt" />
 
     <View

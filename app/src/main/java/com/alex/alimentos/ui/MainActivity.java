@@ -11,11 +11,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.alex.alimentos.listener.OnListClick;
-import com.alex.alimentos.adapter.FoodAdapter;
-import com.alex.alimentos.business.FoodBusiness;
-import com.alex.alimentos.constants.FoodConstants;
-import com.alex.alimentos.entity.FoodEntity;
+import com.alex.alimentos.services.listener.OnListClick;
+import com.alex.alimentos.ui.adapter.FoodAdapter;
+import com.alex.alimentos.services.business.FoodBusiness;
+import com.alex.alimentos.services.constants.FoodConstants;
+import com.alex.alimentos.entities.FoodEntity;
 import com.alex.alimentos.R;
 
 import java.util.List;

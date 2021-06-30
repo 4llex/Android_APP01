@@ -1,4 +1,4 @@
-package com.alex.alimentos.entity;
+package com.alex.alimentos.entities;
 
 public class FoodEntity {
 

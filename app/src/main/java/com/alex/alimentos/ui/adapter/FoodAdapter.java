@@ -1,14 +1,14 @@
-package com.alex.alimentos.adapter;
+package com.alex.alimentos.ui.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.alex.alimentos.listener.OnListClick;
+import com.alex.alimentos.services.listener.OnListClick;
 import com.alex.alimentos.R;
-import com.alex.alimentos.entity.FoodEntity;
-import com.alex.alimentos.viewholder.FoodViewHolder;
+import com.alex.alimentos.entities.FoodEntity;
+import com.alex.alimentos.ui.viewholder.FoodViewHolder;
 
 import java.util.List;
 

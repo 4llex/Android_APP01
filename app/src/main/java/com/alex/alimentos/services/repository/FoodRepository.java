@@ -1,6 +1,6 @@
-package com.alex.alimentos.repository;
+package com.alex.alimentos.services.repository;
 
-import com.alex.alimentos.entity.FoodEntity;
+import com.alex.alimentos.entities.FoodEntity;
 
 import java.util.ArrayList;
 import java.util.List;

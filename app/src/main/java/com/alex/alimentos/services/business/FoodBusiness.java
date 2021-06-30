@@ -1,8 +1,8 @@
-package com.alex.alimentos.business;
+package com.alex.alimentos.services.business;
 
-import com.alex.alimentos.constants.FoodConstants;
-import com.alex.alimentos.entity.FoodEntity;
-import com.alex.alimentos.repository.FoodRepository;
+import com.alex.alimentos.services.constants.FoodConstants;
+import com.alex.alimentos.entities.FoodEntity;
+import com.alex.alimentos.services.repository.FoodRepository;
 
 import java.util.ArrayList;
 import java.util.List;

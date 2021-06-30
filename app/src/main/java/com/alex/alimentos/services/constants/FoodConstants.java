@@ -1,4 +1,4 @@
-package com.alex.alimentos.constants;
+package com.alex.alimentos.services.constants;
 
 public class FoodConstants {
 

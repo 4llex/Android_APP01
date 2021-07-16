@@ -4,6 +4,7 @@ import com.alex.alimentos.entities.FoodEntity;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Classe de dados
@@ -12,13 +13,16 @@ public class FoodRepository {
 
     // Lista de alimentos - Funciona como se fosse um banco de dados
     private List<FoodEntity> mListFood;
+    private List<FoodEntity> mListFoodEn;
+
 
     /**
      * Construtor
      */
     public FoodRepository() {
-        this.mListFood = new ArrayList<>();
 
+
+        this.mListFood = new ArrayList<>();
         // Adiciona items
         this.mListFood.add(new FoodEntity(0, "Alface crespa", 8, 60, "g", "Este alimento contém vitamina A, C e K."));
         this.mListFood.add(new FoodEntity(1, "Azeite", 90, 10, "g", ""));
@@ -36,20 +40,46 @@ public class FoodRepository {
         this.mListFood.add(new FoodEntity(13, "Whiskey", 58, 23, "ml", ""));
 
 
+        this.mListFoodEn = new ArrayList<>();
+        // Adiciona items
+        this.mListFoodEn.add(new FoodEntity(0, "Curly lettuce", 8, 60, "g", "This food contains vitamin A, C and K."));
+        this.mListFoodEn.add(new FoodEntity(1, "Olive oil", 90, 10, "g", ""));
+        this.mListFoodEn.add(new FoodEntity(2, "Sweet potato", 115, 100, "g", "This food is rich in vitamin A."));
+        this.mListFoodEn.add(new FoodEntity(3, "Raw peas", 81, 70, "g", ""));
+        this.mListFoodEn.add(new FoodEntity(4, "Beans", 77, 75, "g", "Este alimento é rico em ferro."));
+        this.mListFoodEn.add(new FoodEntity(5, "Fried chicken fillet", 240, 100, "g", "Protein-rich food."));
+        this.mListFoodEn.add(new FoodEntity(6, "Chickpeas", 720, 200, "g", ""));
+        this.mListFoodEn.add(new FoodEntity(7, "Cooked noodles", 221, 140, "g", ""));
+        this.mListFoodEn.add(new FoodEntity(8, "12 grain loaf of bread", 110, 50, "g", "This food is low in saturated fat."));
+        this.mListFoodEn.add(new FoodEntity(9, "Parmesan cheese", 18, 71, "g", ""));
+        this.mListFoodEn.add(new FoodEntity(10, "Arugula", 5, 20, "g", "This food contains calcium and iron."));
+        this.mListFoodEn.add(new FoodEntity(11, "Cooked green beans", 44, 125, "g", ""));
+        this.mListFoodEn.add(new FoodEntity(12, "Vodka", 231, 100, "ml", "0g fat, 0g protein. Carbohydrate only."));
+        this.mListFoodEn.add(new FoodEntity(13, "Whiskey", 58, 23, "ml", ""));
+
+    }
+
+
+    /**
+     * Retorna alimento específico
+     */
+    public FoodEntity get(int id, String language) {
+        if (language.equals("en")) {
+            return this.mListFoodEn.get(id);
+        }
+        return this.mListFood.get(id);
     }
 
     /**
      * Retorna lista de alimentos
      */
-    public List<FoodEntity> getList() {
-        return this.mListFood;
+    public List<FoodEntity> getList(String language) {
+        if (language.equals("en")) {
+            return this.mListFoodEn;
+        } else {
+            return this.mListFood;
+        }
     }
 
-    /**
-     * Retorna alimento específico
-     */
-    public FoodEntity get(int id) {
-        return this.mListFood.get(id);
-    }
 
 }

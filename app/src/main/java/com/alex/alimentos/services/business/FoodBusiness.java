@@ -6,22 +6,25 @@ import com.alex.alimentos.services.repository.FoodRepository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class FoodBusiness {
 
     private FoodRepository mFoodRepository = new FoodRepository();
-
+    private String mLanguage = Locale.getDefault().getLanguage();
 
     // Retorna um alimento especifico
     public FoodEntity get(int id) {
-        return this.mFoodRepository.get(id);
+        return this.mFoodRepository.get(id, this.mLanguage);
     }
 
 
     //retorna lista de alimentos
     public List<FoodEntity> getList(int filter){
 
-        List<FoodEntity> list = this.mFoodRepository.getList(); // uma lista com todos elementos
+
+
+        List<FoodEntity> list = this.mFoodRepository.getList(this.mLanguage); // uma lista com todos elementos
         List<FoodEntity> filtered = new ArrayList<>(); // uma lista vazia
 
         if (filter == FoodConstants.FILTER.NO_FILTER){
